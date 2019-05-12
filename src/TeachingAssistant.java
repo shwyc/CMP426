@@ -21,7 +21,7 @@ class TeachingAssistant implements Runnable {
   public void run() {
     while (true) {
       try {
-        System.out.println("No students left to help. The TA will nap in his chair.");
+        System.out.println("No students left to help. The TA will nap.");
         wakeupSignal.release(); // will wake up the TA
         Thread.sleep(sleepTime);
 
